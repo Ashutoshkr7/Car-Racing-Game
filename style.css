@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.hide {
+  display: none;
+}
+
+body {
+  /* background-color: #c6d57e; */
+
+  background-image: url("3551228.jpg");
+  /* background-image: url("897259.jpg"); */
+  background-repeat: no-repeat;
+  /* width: 100%;
+  height: auto; */
+  /* height: vh; */
+}
+
+.carGame {
+  width: 100%;
+  height: 100vh;
+  /* background-image: url("backgrass.png"); */
+  /* background-image: url("scene.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* background-size: 100% 100% */
+}
+
+.car,
+.enemy {
+  background-color: #2d3436;
+  width: 50px;
+  height: 90px;
+  /* background-color: #ffe652; */
+  background-color: #14279b;
+  position: absolute;
+  bottom: 120px; /*So that by default the car is at the bottom left of the road*/
+  /* background-image: url("car6.jpg"); */
+  background-image: url("car.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 2;
+  border-radius: 26px;
+  /* background: red; */
+}
+
+.enemy {
+  background-image: url("car.png");
+}
+
+.lines {
+  width: 10px;
+  height: 100px;
+  background: white;
+  position: absolute;
+  margin-left: 195px;
+}
+
+.gameArea {
+  width: 400px;
+  height: 100vh;
+  /* background: #2d3436; */
+  /* background: #283721; */
+  background: #67563c;
+  margin: auto; /*So that the road is at the middle because we have already set with is equal to 400 pixel */
+  position: relative; /*So that car is initially  inside the road*/
+  overflow: hidden; /*Overflow hidden means date if the car is outside the road it will not be visible as it moves under the ground*/
+  border-right: 7px dashed #c8d6e5;
+  border-left: 7px dashed #c8d6e5;
+}
+
+.score {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  /* background: #10ac84; */
+  background: #ee5253;
+  width: 300px;
+  /* width: 240px; */
+  /* height: 70px; */
+  line-height: 70px;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  box-shadow: 0 5px 5px #777;
+}
+
+.startScreen {
+  position: absolute;
+  background-color: #ee5253;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /*Brings one div at centre in another div*/
+  color: white;
+  z-index: 3;
+  text-align: center;
+  border: 1px solid #ff6b6b;
+  border-radius: 15px;
+  padding: 15px;
+  margin: auto;
+  width: 25%;
+  cursor: pointer;
+  letter-spacing: 5;
+  font-size: 20px;
+  word-spacing: 3;
+  line-height: 30px;
+  text-transform: uppercase;
+  box-shadow: 0 5px 5px #777;
+}
